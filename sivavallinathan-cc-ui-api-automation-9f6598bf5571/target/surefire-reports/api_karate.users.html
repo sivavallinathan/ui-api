@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head><META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    <link href="res/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="res/karate-report.css" rel="stylesheet" type="text/css">
+    <link href="favicon.ico" rel="shortcut icon">
+    <script src="res/jquery.min.js" type="text/javascript"></script>
+    <script src="res/jquery.tablesorter.min.js" type="text/javascript"></script>
+    <script src="res/bootstrap.min.js" type="text/javascript"></script>
+    <script src="res/karate-report.js" type="text/javascript"></script>
+    <title>api_karate.users</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        <div class="nav-logo">
+          <a href="karate-summary.html">
+            <img alt="Karate" src="res/karate-logo.svg">
+          </a>
+          <div class="nav-count">
+            <div class="bg-success" id="nav-pass">1</div>
+            <div class="bg-danger" id="nav-fail">0</div>
+          </div>
+        </div>
+        <div id="nav-type">Scenarios</div>         
+        <div id="nav-date">2020-11-25 12:12:03 PM</div>        
+      <div class="nav-container"><div class="nav-item passed"><a href="#[1:19]">[1:19] Post message </a></div></div></div>
+      <div id="content">
+      <div class="page-heading alert alert-primary"><a href="karate-summary.html">Summary</a><span class="feature-label">|</span><a href="karate-tags.html">Tags</a><span class="feature-label">|</span><span class="feature-label">Feature:</span><span class="feature-name">api_karate/users.feature</span><span class="feature-description">sample karate test script</span></div><div class="scenario"><div class="scenario-heading" id="[1:19]"><div class="heading-container"><div class="scenario-tags"></div><span class="scenario-keyword">Scenario: [1:19]</span><span class="scenario-name">Post message </span></div><div class="scenario-time passed">ms: 1876</div></div><div class="step-row"><div class="step-container" id="[1:19]bg"><div class="step-ref bg-step">&gt;&gt;</div><div class="step-cell passed">Background:</div></div><div class="time-cell passed"></div></div><div class="step-row" data-parent="[1:19]bg"><div class="step-container" id="1"><div class="step-ref bg-step">1</div><div class="step-cell passed">Given configure headers = { 'x-test': 'rpaveska' }</div></div><div class="time-cell passed">0</div></div><div class="preformatted" data-parent="1">12:12:01.750 not a js function or feature file: [type: NULL, value: null]</div><div class="step-row"><div class="step-container" id="2"><div class="step-ref passed">2</div><div class="step-cell passed">Given url 'https://sf-qa-us-west-cc-app.campuscloud.io/api/financial-service-provider/fsp/v1/clientconfig/'</div></div><div class="time-cell passed">3</div></div><div class="step-row"><div class="step-container" id="3"><div class="step-ref passed">3</div><div class="step-cell passed">Given def user = {"userName":"user01"}</div></div><div class="time-cell passed">0</div></div><div class="step-row"><div class="step-container" id="4"><div class="step-ref passed">4</div><div class="step-cell passed">And request</div></div><div class="time-cell passed">8</div></div><div class="preformatted" data-parent="4">{
+    "providerConfigId": "6ac3779e-586a-433d-bc14-4d6cded7ea65",
+    "userName": #(user.userName) ,
+    "password": null,
+    "privateKey": "-----BEGIN RSA PRIVATE KEY-----\nProc-Type: 4,ENCRYPTED\nDEK-Info: AES-128-CBC,55B9A1C6B4A68C0AEBA7EBF0B38BE814\n \nBwxBFM1CnoaC5gw7RWIvm3DjyFLcOuZPyDA6Ois8dHqmkVh747X3zTo8YaaXw3sW\n8NnulvxQcJkvZjx3qxV5JPG4YhffTrNRQwyACdqKkrN7lWIChLV5Q/EbjaFZr26s\nnXotN+1t+Y0aV1FCWasxPAvBIHGtKMmNjk/u4CXpNyrpPWyvdOjyGUMRVWNzjxUO\nxUoXI3YbLbDJiPPQSvStNVBboxufmp9KVnDVJfGVRMdRgYh802HdPpBpOc6sOcgx\nV1ejrR2ATc6wvf+Jii7xYlKt0sSWh4+8AZlFO5pSRANy/RUN6aEbNfuj4GB2ICbn\nvIytzMKPbfPt1In2TOL/igtaAkc8CN6lNL8ejo4v1v8NCr3BROOipmqN+cufpzWD\nJW3d4wRHNIGvVpbUadbRO7vSsPgeNAoE6m/sgi3s0XI6zdf6QOF51ojt+y2nDf7B\n8IzAGgwEJ/hdcC3Z8ds7ufJPh7RJHTBiGdJIPKOHuIbqJuiC0WxRC4wtiikm0Ky8\naYkg1ns+dJsTwq3t0g7yClDC/8pLgHQ8ysCS8mWKtfHiGP/FXeVmyfd2Rem1CfWq\nSJytu9IBsMg6NNcxe7EiqoETlHvhMxwtKBP8EWBQVVGJxSS++yGK7i2Eey/CtxJE\nbjPrjKAs+/ni+F+nOcta5VMuJW2BnjUa7OtXvvGexp/9WllzRAxGS3pLFZhqCSlL\nLKz39O3C/OdYMVmT3/Ww8Zzmj0kIPacbaXPFYBd1Aph+2xJhJGyejQUiDxJNJEyt\nhUp984Xj3zrgwbHaKoOQfAOvfsXHPT14pVlQPZEpc0Sw2ziLUilONeOb+zCZ3RS5\n1tD+2cZDJdPQs1DMIpWDM6Oz6pFGejsNqVWLHdbhuKXwxE7p96sAt8W5uVGv/0bN\nElNENIkVrjtPUOYPekStA0H7rohMkK0bYbkynEgAt58j9z37ckvRvSGyuDwhXNe6\nyAEcWkVPIReiWiAFrChkY4tXgC99GYsL8c/vf4ygi0niKhSZU4CqPp9V+dg7RKxM\nrUZ4es2ZUS+6ey20CdX86plcQg4EEu3hmMW00bmKXCEcCG/8snkzRVkRg7S/eldH\nwj5Lf4anTJfyKGrhPp3/mPpG1tRxonDMgsKJ1F1w2ZlhG//z8NGq0Tq3fIgvtHpy\nFHH20vVEm9ITjNtcE37Zi9AiLJeaVxvJ5gpffasMj39r/70AZYUDCxvSDHXWW/Ri\nU+UwEuz0T5JKPK63NJcjuFoz2RU/9pyyvKgeq3eLdFnERf/KMNnifKjyx4UB1GjS\nPDIBpvAUrcu+8hj/edE161tFESNLk/9GZqk+1F8McVqcuTKu7GJ5Y0mCjfkK2TJ2\nG1N14/It02pANOK8idgBEZIWUh5Gskx00S6LZPCnz6phICjtFkCTaQDn35yBXZJq\nApH3rSNvAF+t7wMBg0AvYAbhiHguxO1v750blMA+yrL0HTe7j3z17fedYGFNXu5T\n5Xp1VP1hla/xaCUi8QZ0zVQOrrguD6+L7Z39pEIitnwVFxw6ftUiDDX+ns5Axqpw\n2GM6zoEIuf+Rj9447Tva6TDvWbG+6LI/0CJyN8aX0K6BChNV5prKCdQPWEE1aEVq\n-----END RSA PRIVATE KEY-----",
+    "passPhrase": "passphrase"
+}</div><div class="step-row"><div class="step-container" id="5"><div class="step-ref passed">5</div><div class="step-cell passed">When method post</div></div><div class="time-cell passed">1851</div></div><div class="preformatted" data-parent="5">12:12:01.768 request:
+1 &gt; POST https://sf-qa-us-west-cc-app.campuscloud.io/api/financial-service-provider/fsp/v1/clientconfig/
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 1932
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: sf-qa-us-west-cc-app.campuscloud.io
+1 &gt; User-Agent: Apache-HttpClient/4.5.9 (Java/11.0.7)
+1 &gt; x-test: rpaveska
+{"providerConfigId":"6ac3779e-586a-433d-bc14-4d6cded7ea65","userName":"user01","password":null,"privateKey":"-----BEGIN RSA PRIVATE KEY-----\nProc-Type: 4,ENCRYPTED\nDEK-Info: AES-128-CBC,55B9A1C6B4A68C0AEBA7EBF0B38BE814\n \nBwxBFM1CnoaC5gw7RWIvm3DjyFLcOuZPyDA6Ois8dHqmkVh747X3zTo8YaaXw3sW\n8NnulvxQcJkvZjx3qxV5JPG4YhffTrNRQwyACdqKkrN7lWIChLV5Q/EbjaFZr26s\nnXotN+1t+Y0aV1FCWasxPAvBIHGtKMmNjk/u4CXpNyrpPWyvdOjyGUMRVWNzjxUO\nxUoXI3YbLbDJiPPQSvStNVBboxufmp9KVnDVJfGVRMdRgYh802HdPpBpOc6sOcgx\nV1ejrR2ATc6wvf+Jii7xYlKt0sSWh4+8AZlFO5pSRANy/RUN6aEbNfuj4GB2ICbn\nvIytzMKPbfPt1In2TOL/igtaAkc8CN6lNL8ejo4v1v8NCr3BROOipmqN+cufpzWD\nJW3d4wRHNIGvVpbUadbRO7vSsPgeNAoE6m/sgi3s0XI6zdf6QOF51ojt+y2nDf7B\n8IzAGgwEJ/hdcC3Z8ds7ufJPh7RJHTBiGdJIPKOHuIbqJuiC0WxRC4wtiikm0Ky8\naYkg1ns+dJsTwq3t0g7yClDC/8pLgHQ8ysCS8mWKtfHiGP/FXeVmyfd2Rem1CfWq\nSJytu9IBsMg6NNcxe7EiqoETlHvhMxwtKBP8EWBQVVGJxSS++yGK7i2Eey/CtxJE\nbjPrjKAs+/ni+F+nOcta5VMuJW2BnjUa7OtXvvGexp/9WllzRAxGS3pLFZhqCSlL\nLKz39O3C/OdYMVmT3/Ww8Zzmj0kIPacbaXPFYBd1Aph+2xJhJGyejQUiDxJNJEyt\nhUp984Xj3zrgwbHaKoOQfAOvfsXHPT14pVlQPZEpc0Sw2ziLUilONeOb+zCZ3RS5\n1tD+2cZDJdPQs1DMIpWDM6Oz6pFGejsNqVWLHdbhuKXwxE7p96sAt8W5uVGv/0bN\nElNENIkVrjtPUOYPekStA0H7rohMkK0bYbkynEgAt58j9z37ckvRvSGyuDwhXNe6\nyAEcWkVPIReiWiAFrChkY4tXgC99GYsL8c/vf4ygi0niKhSZU4CqPp9V+dg7RKxM\nrUZ4es2ZUS+6ey20CdX86plcQg4EEu3hmMW00bmKXCEcCG/8snkzRVkRg7S/eldH\nwj5Lf4anTJfyKGrhPp3/mPpG1tRxonDMgsKJ1F1w2ZlhG//z8NGq0Tq3fIgvtHpy\nFHH20vVEm9ITjNtcE37Zi9AiLJeaVxvJ5gpffasMj39r/70AZYUDCxvSDHXWW/Ri\nU+UwEuz0T5JKPK63NJcjuFoz2RU/9pyyvKgeq3eLdFnERf/KMNnifKjyx4UB1GjS\nPDIBpvAUrcu+8hj/edE161tFESNLk/9GZqk+1F8McVqcuTKu7GJ5Y0mCjfkK2TJ2\nG1N14/It02pANOK8idgBEZIWUh5Gskx00S6LZPCnz6phICjtFkCTaQDn35yBXZJq\nApH3rSNvAF+t7wMBg0AvYAbhiHguxO1v750blMA+yrL0HTe7j3z17fedYGFNXu5T\n5Xp1VP1hla/xaCUi8QZ0zVQOrrguD6+L7Z39pEIitnwVFxw6ftUiDDX+ns5Axqpw\n2GM6zoEIuf+Rj9447Tva6TDvWbG+6LI/0CJyN8aX0K6BChNV5prKCdQPWEE1aEVq\n-----END RSA PRIVATE KEY-----","passPhrase":"passphrase"}
+
+12:12:03.612 response time in milliseconds: 1840.44
+1 &lt; 201
+1 &lt; Access-Control-Allow-Headers: Authorization, Origin, X-Requested-With, Content-Type, Accept
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Vary: Accept-Encoding
+1 &lt; X-Fabric-Node: _sfvmapp_1
+1 &lt; connection: close
+1 &lt; content-type: application/json; charset=utf-8
+1 &lt; date: Wed, 25 Nov 2020 06:42:05 GMT
+1 &lt; request-context: appId=cid-v1:862f502e-5553-4d17-ba91-7c48c24cc209
+{"providerConfigId":"6ac3779e-586a-433d-bc14-4d6cded7ea65","userName":"user01","password":null,"privateKey":"-----BEGIN RSA PRIVATE KEY-----\nProc-Type: 4,ENCRYPTED\nDEK-Info: AES-128-CBC,55B9A1C6B4A68C0AEBA7EBF0B38BE814\n \nBwxBFM1CnoaC5gw7RWIvm3DjyFLcOuZPyDA6Ois8dHqmkVh747X3zTo8YaaXw3sW\n8NnulvxQcJkvZjx3qxV5JPG4YhffTrNRQwyACdqKkrN7lWIChLV5Q/EbjaFZr26s\nnXotN+1t+Y0aV1FCWasxPAvBIHGtKMmNjk/u4CXpNyrpPWyvdOjyGUMRVWNzjxUO\nxUoXI3YbLbDJiPPQSvStNVBboxufmp9KVnDVJfGVRMdRgYh802HdPpBpOc6sOcgx\nV1ejrR2ATc6wvf+Jii7xYlKt0sSWh4+8AZlFO5pSRANy/RUN6aEbNfuj4GB2ICbn\nvIytzMKPbfPt1In2TOL/igtaAkc8CN6lNL8ejo4v1v8NCr3BROOipmqN+cufpzWD\nJW3d4wRHNIGvVpbUadbRO7vSsPgeNAoE6m/sgi3s0XI6zdf6QOF51ojt+y2nDf7B\n8IzAGgwEJ/hdcC3Z8ds7ufJPh7RJHTBiGdJIPKOHuIbqJuiC0WxRC4wtiikm0Ky8\naYkg1ns+dJsTwq3t0g7yClDC/8pLgHQ8ysCS8mWKtfHiGP/FXeVmyfd2Rem1CfWq\nSJytu9IBsMg6NNcxe7EiqoETlHvhMxwtKBP8EWBQVVGJxSS++yGK7i2Eey/CtxJE\nbjPrjKAs+/ni+F+nOcta5VMuJW2BnjUa7OtXvvGexp/9WllzRAxGS3pLFZhqCSlL\nLKz39O3C/OdYMVmT3/Ww8Zzmj0kIPacbaXPFYBd1Aph+2xJhJGyejQUiDxJNJEyt\nhUp984Xj3zrgwbHaKoOQfAOvfsXHPT14pVlQPZEpc0Sw2ziLUilONeOb+zCZ3RS5\n1tD+2cZDJdPQs1DMIpWDM6Oz6pFGejsNqVWLHdbhuKXwxE7p96sAt8W5uVGv/0bN\nElNENIkVrjtPUOYPekStA0H7rohMkK0bYbkynEgAt58j9z37ckvRvSGyuDwhXNe6\nyAEcWkVPIReiWiAFrChkY4tXgC99GYsL8c/vf4ygi0niKhSZU4CqPp9V+dg7RKxM\nrUZ4es2ZUS+6ey20CdX86plcQg4EEu3hmMW00bmKXCEcCG/8snkzRVkRg7S/eldH\nwj5Lf4anTJfyKGrhPp3/mPpG1tRxonDMgsKJ1F1w2ZlhG//z8NGq0Tq3fIgvtHpy\nFHH20vVEm9ITjNtcE37Zi9AiLJeaVxvJ5gpffasMj39r/70AZYUDCxvSDHXWW/Ri\nU+UwEuz0T5JKPK63NJcjuFoz2RU/9pyyvKgeq3eLdFnERf/KMNnifKjyx4UB1GjS\nPDIBpvAUrcu+8hj/edE161tFESNLk/9GZqk+1F8McVqcuTKu7GJ5Y0mCjfkK2TJ2\nG1N14/It02pANOK8idgBEZIWUh5Gskx00S6LZPCnz6phICjtFkCTaQDn35yBXZJq\nApH3rSNvAF+t7wMBg0AvYAbhiHguxO1v750blMA+yrL0HTe7j3z17fedYGFNXu5T\n5Xp1VP1hla/xaCUi8QZ0zVQOrrguD6+L7Z39pEIitnwVFxw6ftUiDDX+ns5Axqpw\n2GM6zoEIuf+Rj9447Tva6TDvWbG+6LI/0CJyN8aX0K6BChNV5prKCdQPWEE1aEVq\n-----END RSA PRIVATE KEY-----","passPhrase":"passphrase","publicKey":null,"folderPath":null,"settlementTag":null,"configId":"4fb2a065-c9de-42ab-8eab-f5a937ff1dee"}</div><div class="step-row"><div class="step-container" id="6"><div class="step-ref passed">6</div><div class="step-cell passed">And def u = response.configId</div></div><div class="time-cell passed">8</div></div><div class="step-row"><div class="step-container" id="7"><div class="step-ref passed">7</div><div class="step-cell passed">Then print 'count is : ', response.configId</div></div><div class="time-cell passed">6</div></div><div class="preformatted" data-parent="7">12:12:03.627 [print] count is :  4fb2a065-c9de-42ab-8eab-f5a937ff1dee</div><div class="step-row"><div class="step-container" id="8"><div class="step-ref passed">8</div><div class="step-cell passed">Then status 201</div></div><div class="time-cell passed">0</div></div></div></div>
+    </div>   
+  </body>
+</html>

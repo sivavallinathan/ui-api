@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head><META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    <link href="res/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="res/karate-report.css" rel="stylesheet" type="text/css">
+    <link href="favicon.ico" rel="shortcut icon">
+    <script src="res/jquery.min.js" type="text/javascript"></script>
+    <script src="res/jquery.tablesorter.min.js" type="text/javascript"></script>
+    <script src="res/bootstrap.min.js" type="text/javascript"></script>
+    <script src="res/karate-report.js" type="text/javascript"></script>
+    <title>api_karate.SettlementHistory</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        <div class="nav-logo">
+          <a href="karate-summary.html">
+            <img alt="Karate" src="res/karate-logo.svg">
+          </a>
+          <div class="nav-count">
+            <div class="bg-success" id="nav-pass">0</div>
+            <div class="bg-danger" id="nav-fail">2</div>
+          </div>
+        </div>
+        <div id="nav-type">Scenarios</div>         
+        <div id="nav-date">2021-01-15 02:04:14 PM</div>        
+      <div class="nav-container"><div class="nav-item failed"><a href="#[1:8]">[1:8] Settlement History for Single institution </a></div><div class="nav-item failed"><a href="#[2:15]">[2:15] Settlement History for all institution </a></div></div></div>
+      <div id="content">
+      <div class="page-heading alert alert-primary"><a href="karate-summary.html">Summary</a><span class="feature-label">|</span><a href="karate-tags.html">Tags</a><span class="feature-label">|</span><span class="feature-label">Feature:</span><span class="feature-name">api_karate/SettlementHistory.feature</span><span class="feature-description">sample karate test script</span></div><div class="scenario"><div class="scenario-heading" id="[1:8]"><div class="heading-container"><div class="scenario-tags"></div><span class="scenario-keyword">Scenario: [1:8]</span><span class="scenario-name">Settlement History for Single institution </span></div><div class="scenario-time failed">ms: 1393</div></div><div class="step-row"><div class="step-container" id="[1:8]bg"><div class="step-ref bg-step">&gt;&gt;</div><div class="step-cell passed">Background:</div></div><div class="time-cell passed"></div></div><div class="step-row" data-parent="[1:8]bg"><div class="step-container" id="1"><div class="step-ref bg-step">1</div><div class="step-cell passed">Given configure headers = { 'x-test': 'rpaveska' }</div></div><div class="time-cell passed">0</div></div><div class="preformatted" data-parent="1">14:04:11.598 not a js function or feature file: [type: NULL, value: null]</div><div class="step-row"><div class="step-container" id="2"><div class="step-ref passed">2</div><div class="step-cell passed">Given url 'https://sf-qa-us-west-cc-app.campuscloud.io/api/settlement-config/v1/institution-settlement-history/b888879b-ccca-4dd7-be35-f7e6449bfa35'</div></div><div class="time-cell passed">8</div></div><div class="step-row"><div class="step-container" id="3"><div class="step-ref passed">3</div><div class="step-cell passed">When method get</div></div><div class="time-cell passed">1378</div></div><div class="preformatted" data-parent="3">14:04:11.617 request:
+1 &gt; GET https://sf-qa-us-west-cc-app.campuscloud.io/api/settlement-config/v1/institution-settlement-history/b888879b-ccca-4dd7-be35-f7e6449bfa35
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: sf-qa-us-west-cc-app.campuscloud.io
+1 &gt; User-Agent: Apache-HttpClient/4.5.9 (Java/11.0.7)
+1 &gt; x-test: rpaveska
+
+14:04:12.979 response time in milliseconds: 1356.93
+1 &lt; 503
+1 &lt; Connection: Close
+1 &lt; Content-Type: text/html
+&lt;div style="border: 3px solid #4991C5; font:1.5em; font-family:tahoma,calibri,arial; font-weight:bold; color:#0A4369; padding:5px; margin:10px; text-align:center"&gt; The requested service is temporarily unavailable. It is either overloaded or under maintenance. Please try later.&lt;/div&gt;&lt;!--0123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234--&gt;</div><div class="step-row"><div class="step-container" id="4"><div class="step-ref failed">4</div><div class="step-cell failed">Then status 200</div></div><div class="time-cell failed">7</div></div><div class="preformatted" data-parent="4">14:04:12.991 status code was: 503, expected: 200, response time: 1357, url: https://sf-qa-us-west-cc-app.campuscloud.io/api/settlement-config/v1/institution-settlement-history/b888879b-ccca-4dd7-be35-f7e6449bfa35, response: &lt;div style="border: 3px solid #4991C5; font:1.5em; font-family:tahoma,calibri,arial; font-weight:bold; color:#0A4369; padding:5px; margin:10px; text-align:center"&gt; The requested service is temporarily unavailable. It is either overloaded or under maintenance. Please try later.&lt;/div&gt;&lt;!--0123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234--&gt;
+SettlementHistory.feature:12 - status code was: 503, expected: 200, response time: 1357, url: https://sf-qa-us-west-cc-app.campuscloud.io/api/settlement-config/v1/institution-settlement-history/b888879b-ccca-4dd7-be35-f7e6449bfa35, response: &lt;div style="border: 3px solid #4991C5; font:1.5em; font-family:tahoma,calibri,arial; font-weight:bold; color:#0A4369; padding:5px; margin:10px; text-align:center"&gt; The requested service is temporarily unavailable. It is either overloaded or under maintenance. Please try later.&lt;/div&gt;&lt;!--0123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234--&gt;</div></div><div class="scenario"><div class="scenario-heading" id="[2:15]"><div class="heading-container"><div class="scenario-tags"></div><span class="scenario-keyword">Scenario: [2:15]</span><span class="scenario-name">Settlement History for all institution </span></div><div class="scenario-time failed">ms: 1253</div></div><div class="step-row"><div class="step-container" id="[2:15]bg"><div class="step-ref bg-step">&gt;&gt;</div><div class="step-cell passed">Background:</div></div><div class="time-cell passed"></div></div><div class="step-row" data-parent="[2:15]bg"><div class="step-container" id="5"><div class="step-ref bg-step">5</div><div class="step-cell passed">Given configure headers = { 'x-test': 'rpaveska' }</div></div><div class="time-cell passed">0</div></div><div class="preformatted" data-parent="5">14:04:13.048 not a js function or feature file: [type: NULL, value: null]</div><div class="step-row"><div class="step-container" id="6"><div class="step-ref passed">6</div><div class="step-cell passed">Given url 'https://sf-qa-us-west-cc-app.campuscloud.io/api/settlement-config/v1/institution-settlement-history?limit=200'</div></div><div class="time-cell passed">8</div></div><div class="step-row"><div class="step-container" id="7"><div class="step-ref passed">7</div><div class="step-cell passed">When method get</div></div><div class="time-cell passed">1240</div></div><div class="preformatted" data-parent="7">14:04:13.063 request:
+1 &gt; GET https://sf-qa-us-west-cc-app.campuscloud.io/api/settlement-config/v1/institution-settlement-history?limit=200
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: sf-qa-us-west-cc-app.campuscloud.io
+1 &gt; User-Agent: Apache-HttpClient/4.5.9 (Java/11.0.7)
+1 &gt; x-test: rpaveska
+
+14:04:14.292 response time in milliseconds: 1226.21
+1 &lt; 503
+1 &lt; Connection: Close
+1 &lt; Content-Type: text/html
+&lt;div style="border: 3px solid #4991C5; font:1.5em; font-family:tahoma,calibri,arial; font-weight:bold; color:#0A4369; padding:5px; margin:10px; text-align:center"&gt; The requested service is temporarily unavailable. It is either overloaded or under maintenance. Please try later.&lt;/div&gt;&lt;!--0123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234--&gt;</div><div class="step-row"><div class="step-container" id="8"><div class="step-ref failed">8</div><div class="step-cell failed">Then status 200</div></div><div class="time-cell failed">4</div></div><div class="preformatted" data-parent="8">14:04:14.303 status code was: 503, expected: 200, response time: 1226, url: https://sf-qa-us-west-cc-app.campuscloud.io/api/settlement-config/v1/institution-settlement-history?limit=200, response: &lt;div style="border: 3px solid #4991C5; font:1.5em; font-family:tahoma,calibri,arial; font-weight:bold; color:#0A4369; padding:5px; margin:10px; text-align:center"&gt; The requested service is temporarily unavailable. It is either overloaded or under maintenance. Please try later.&lt;/div&gt;&lt;!--0123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234--&gt;
+SettlementHistory.feature:19 - status code was: 503, expected: 200, response time: 1226, url: https://sf-qa-us-west-cc-app.campuscloud.io/api/settlement-config/v1/institution-settlement-history?limit=200, response: &lt;div style="border: 3px solid #4991C5; font:1.5em; font-family:tahoma,calibri,arial; font-weight:bold; color:#0A4369; padding:5px; margin:10px; text-align:center"&gt; The requested service is temporarily unavailable. It is either overloaded or under maintenance. Please try later.&lt;/div&gt;&lt;!--0123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234--&gt;</div></div></div>
+    </div>   
+  </body>
+</html>

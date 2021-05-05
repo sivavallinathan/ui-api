@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head><META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    <link href="res/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="res/karate-report.css" rel="stylesheet" type="text/css">
+    <link href="favicon.ico" rel="shortcut icon">
+    <script src="res/jquery.min.js" type="text/javascript"></script>
+    <script src="res/jquery.tablesorter.min.js" type="text/javascript"></script>
+    <script src="res/bootstrap.min.js" type="text/javascript"></script>
+    <script src="res/karate-report.js" type="text/javascript"></script>
+    <title>api_karate.AutomaticSettlements</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        <div class="nav-logo">
+          <a href="karate-summary.html">
+            <img alt="Karate" src="res/karate-logo.svg">
+          </a>
+          <div class="nav-count">
+            <div class="bg-success" id="nav-pass">1</div>
+            <div class="bg-danger" id="nav-fail">0</div>
+          </div>
+        </div>
+        <div id="nav-type">Scenarios</div>         
+        <div id="nav-date">2021-01-15 01:55:45 PM</div>        
+      <div class="nav-container"><div class="nav-item passed"><a href="#[1:7]">[1:7] Stop Failing Automatic Settlement </a></div></div></div>
+      <div id="content">
+      <div class="page-heading alert alert-primary"><a href="karate-summary.html">Summary</a><span class="feature-label">|</span><a href="karate-tags.html">Tags</a><span class="feature-label">|</span><span class="feature-label">Feature:</span><span class="feature-name">api_karate/AutomaticSettlements.feature</span><span class="feature-description">sample karate test script</span></div><div class="scenario"><div class="scenario-heading" id="[1:7]"><div class="heading-container"><div class="scenario-tags"></div><span class="scenario-keyword">Scenario: [1:7]</span><span class="scenario-name">Stop Failing Automatic Settlement </span></div><div class="scenario-time passed">ms: 1911</div></div><div class="step-row"><div class="step-container" id="[1:7]bg"><div class="step-ref bg-step">&gt;&gt;</div><div class="step-cell passed">Background:</div></div><div class="time-cell passed"></div></div><div class="step-row" data-parent="[1:7]bg"><div class="step-container" id="1"><div class="step-ref bg-step">1</div><div class="step-cell passed">Given configure headers = { 'x-test': 'rpaveska' }</div></div><div class="time-cell passed">133</div></div><div class="preformatted" data-parent="1">13:55:43.302 not a js function or feature file: [type: NULL, value: null]</div><div class="step-row"><div class="step-container" id="2"><div class="step-ref passed">2</div><div class="step-cell passed">Given url 'https://aks-qa-us-west-cc.campuscloud.io/api/settlement-config/v1/institution-configurations/b888879b-ccca-4dd7-be35-f7e6449bfa35/settlement-type/Campus%20Life/resetprocessing'</div></div><div class="time-cell passed">4</div></div><div class="step-row"><div class="step-container" id="3"><div class="step-ref passed">3</div><div class="step-cell passed">And request</div></div><div class="time-cell passed">0</div></div><div class="preformatted" data-parent="3">{
+	
+}</div><div class="step-row"><div class="step-container" id="4"><div class="step-ref passed">4</div><div class="step-cell passed">When method post</div></div><div class="time-cell passed">1773</div></div><div class="preformatted" data-parent="4">13:55:43.569 request:
+1 &gt; POST https://aks-qa-us-west-cc.campuscloud.io/api/settlement-config/v1/institution-configurations/b888879b-ccca-4dd7-be35-f7e6449bfa35/settlement-type/Campus%20Life/resetprocessing
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 2
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: aks-qa-us-west-cc.campuscloud.io
+1 &gt; User-Agent: Apache-HttpClient/4.5.9 (Java/11.0.7)
+1 &gt; x-test: rpaveska
+{}
+
+13:55:45.237 response time in milliseconds: 1664.03
+1 &lt; 200
+1 &lt; Connection: keep-alive
+1 &lt; Content-Length: 0
+1 &lt; Date: Fri, 15 Jan 2021 08:25:46 GMT
+1 &lt; Request-Context: appId=cid-v1:862f502e-5553-4d17-ba91-7c48c24cc209
+1 &lt; Strict-Transport-Security: max-age=15724800; includeSubDomains
+1 &lt; Vary: [Origin, Access-Control-Request-Method, Access-Control-Request-Headers]</div><div class="step-row"><div class="step-container" id="5"><div class="step-ref passed">5</div><div class="step-cell passed">Then status 200</div></div><div class="time-cell passed">0</div></div></div></div>
+    </div>   
+  </body>
+</html>
